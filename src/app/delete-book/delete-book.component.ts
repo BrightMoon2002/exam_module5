@@ -27,7 +27,7 @@ export class DeleteBookComponent implements OnInit {
 
   deleteBook() {
     this.bookService.deleteBook(this.book.id).subscribe(data1 =>{
-      alert("xóa thành công")
+      alert("deleteBook successful")
       this.dialogRef.close();
     })
   }
