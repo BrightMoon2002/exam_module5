@@ -23,29 +23,6 @@ export class ListBookComponent implements OnInit {
     })
   }
 
-  // openDialog(): void {
-  //   const dialogRef = this.dialog.open(CreateBookComponent, {
-  //   });
-  //
-  //   dialogRef.afterClosed().subscribe(result => {
-  //     this.getListBook();
-  //     console.log('The dialog was closed');
-  //   });
-  // }
-
-  // openDialogEdit(id: number) {
-  //   const dialogRef = this.dialog.open(EditBookComponent, {
-  //     data : {
-  //       id: id
-  //     }
-  //   });
-  //   dialogRef.afterClosed().subscribe(result => {
-  //     this.getListBook();
-  //     console.log('The dialog was closed');
-  //   });
-  //
-  // }
-
   openDialogDelete(id: number) {
     const dialogRef = this.dialog.open(DeleteBookComponent, {
       data : {
